@@ -1,5 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
-
-//JSX
-ReactDOM.render(<div><h1>Unordered List of Goals</h1><ul><li>Be Proactive</li><li>Think Win-Win</li><li>Synergize</li></ul></div>, document.getElementById("root"))
+//MyApp is a component that renders JSX elements
+function MyApp() {
+   return (
+       //JSX elements
+       <ul>
+           <li>Be Proactive</li>
+           <li>Think Win-Win</li>
+           <li>Synergize</li>
+       </ul>
+   )
+}
+ReactDOM.render(
+    <MyApp />,
+    document.getElementById("root")
+)
