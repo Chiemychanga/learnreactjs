@@ -1,15 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import MyInfo from "./components/MyInfo"
+import App from "./components/App"
 
-ReactDOM.render(<MyInfo />, document.getElementById("root"))
-/* Objectives:
-1. Set up the basic React code from scratch
-2. Create a functional component called MyInfo that returns the following UI:
-    a. An h1 with your name
-    b. A paragraph with a little blurb about yourself
-    c. An ordered or unordered list of the top 3 vacation spots you'd like to visit
-3. Render an instance of that functional component to the browser
-Extra challenge: leran on your own (Google!) how you can add some style to your page.
-(We willl also cover this in an upcoming lesson).
- */
+ReactDOM.render(<App />, document.getElementById("root"))
