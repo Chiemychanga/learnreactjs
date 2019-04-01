@@ -1,8 +1,8 @@
 import React from "react"
-import ContactCard from "./components/ContactCard"
+import ContactCard from "./ContactCard"
 
 
-function App() {
+function AppContactCard() {
     return (
         <div className="contacts">
             <ContactCard
@@ -28,4 +28,4 @@ function App() {
         </div>
     )
 }
-export default App
+export default AppContactCard
