@@ -1,19 +1,14 @@
 import React from "react"
-import Joke from "./Joke"
+// import Joke from "./Joke"
+import Gym from "./Gym"
+import mmaGymsData from "../mmaGymsData"
 
 function App() {
+    const gymComponents = mmaGymsData.map(gym => <Gym key={gym.id} name={gym.name} rating={gym.rating} />)
+
     return (
         <div>
-            <Joke
-                question="Why does Rajeev love to karaoke?"
-                punchLine="Because he loves to Singh"
-            />
-            <Joke
-                punchLine="Rawan is a diva"
-            />
-            {/*<Joke />*/}
-            {/*<Joke />*/}
-            {/*<Joke />*/}
+            {gymComponents}
         </div>
     )
 }
